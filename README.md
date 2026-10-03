@@ -63,3 +63,4 @@ machine; if something fails, fix it and use the real output for your screenshots
  - deployment.yaml has imagePullPolicy: Never (image built inside Minikube).
  - Jenkins "Docker Build" stage builds inside minikube's Docker daemon.
 Event registration module with duplicate check
+Event registration module with duplicate check
