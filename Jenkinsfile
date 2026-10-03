@@ -3,7 +3,7 @@ pipeline {
   environment { IMAGE = "campusconnect:${BUILD_NUMBER}" }
   stages {
     stage('Checkout') {
-      steps { git branch: 'main', url: 'https://github.com/<your-team>/campusconnect.git' }
+      steps { git branch: 'main', url: 'https://github.com/sahithiradarapu/campusconnect.git' }
     }
     stage('Build')     { steps { sh 'mvn clean package -DskipTests' } }
     stage('Unit Test') { steps { sh 'mvn test' } }
